@@ -316,7 +316,7 @@ export default class Frisbee {
       delete this.headers.Authorization;
     else if (typeof token === 'string')
       this.headers.Authorization =
-        `Bearer ${token}`;
+        `JWT ${token}`;
     else
       throw new Error('jwt token must be a string');
 
